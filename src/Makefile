@@ -25,7 +25,7 @@ SRCS    += CameraInfoOpt.c LaneDetectorOpt.c cmdline.c LaneDetector.cc \
 OBJECTS += CameraInfoOpt.o LaneDetectorOpt.o cmdline.o \
 	LaneDetector.o InversePerspectiveMapping.o mcv.o \
 	main.o
-CFLAGS += $(OCVFLAGS)
+CFLAGS += $(OCVFLAGS) -std=c++11
 LIBS += $(OCVLIBS)
 BINARY = LaneDetector$(SFX)
 
